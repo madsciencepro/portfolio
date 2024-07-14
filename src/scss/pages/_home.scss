@@ -1,0 +1,23 @@
+.bg-hexagons {
+  background-image: url("../assets/img/hexagons3.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/img/welcome.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 900px;
+    width: 90px;
+    top: 0;
+    left: -2px;
+  }
+}
+
+.section-bg-gray {
+  background-color: $section-bg-gray;
+}
