@@ -1,3 +1,10 @@
 .navbar {
   background-image: none;
 }
+
+.nav-link {
+  color: #ffffff;
+  &:hover {
+    color: $primary;
+  }
+}

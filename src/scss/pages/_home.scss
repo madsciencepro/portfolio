@@ -21,3 +21,81 @@
 .section-bg-gray {
   background-color: $section-bg-gray;
 }
+
+.main-margin {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  @include media-breakpoint-down(sm) {
+    width: calc(100% - 4rem);
+  }
+  @include media-breakpoint-up(sm) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.navbar-brand {
+  @include media-breakpoint-down(sm) {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+.separation-line {
+  width: 125px;
+  height: 2px;
+  background-color: $primary;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.masthead {
+  font-weight: bold;
+}
+
+.subheading {
+  color: $tertiary;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.tool-icon {
+  font-size: 2.5rem;
+}
+
+.labfile {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  @include media-breakpoint-up(md) {
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.labfile-left {
+  border-bottom-left-radius: 0;
+  @include media-breakpoint-up(md) {
+    border-bottom-left-radius: 0.375rem;
+  }
+}
+.labfile-img {
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.labfile-sub {
+  color: $footer;
+  font-size: 1.25rem;
+}
+
+.labfile-text {
+  font-size: 0.875rem;
+}
